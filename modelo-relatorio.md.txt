@@ -1,0 +1,82 @@
+# 📄 Relatório do Projeto - Farmácia Virtual na AWS
+
+## 🏷️ Nome do Projeto
+Farmácia Vida+
+
+---
+
+## 🎯 Objetivo
+Desenvolver a arquitetura de uma plataforma virtual para uma farmácia fictícia utilizando serviços da AWS, com foco em escalabilidade, segurança, disponibilidade e desempenho.
+
+---
+
+## 🧩 Descrição da Solução
+A solução proposta utiliza serviços da AWS para hospedar o front-end, processar requisições, armazenar arquivos e gerenciar banco de dados.
+
+A aplicação permite que usuários acessem produtos, realizem compras e armazenem receitas médicas.
+
+---
+
+## ☁️ Serviços AWS Utilizados
+
+- Amazon S3 → armazenamento de arquivos e front-end
+- Amazon CloudFront → entrega de conteúdo com baixa latência
+- Amazon EC2 → execução da aplicação
+- Elastic Load Balancing → distribuição de tráfego
+- Amazon EC2 Auto Scaling → escalabilidade automática
+- Amazon RDS → banco de dados relacional
+- Amazon VPC → isolamento da rede
+- AWS IAM → controle de acesso
+- Amazon CloudWatch → monitoramento
+- Amazon Route 53 → DNS
+
+---
+
+## 🏗️ Arquitetura da Solução
+
+O usuário acessa a aplicação através da internet.
+
+O Route 53 direciona a requisição, enquanto o CloudFront melhora o desempenho da entrega.
+
+O front-end pode ser hospedado no Amazon S3.
+
+As requisições são enviadas para um Load Balancer, que distribui entre instâncias EC2.
+
+O banco de dados é gerenciado pelo Amazon RDS.
+
+Arquivos como imagens e receitas médicas são armazenados no Amazon S3.
+
+O monitoramento é realizado pelo Amazon CloudWatch.
+
+---
+
+## 🔐 Segurança
+
+- Uso de IAM para controle de permissões
+- Security Groups para controle de tráfego
+- Banco de dados em sub-rede privada
+- Separação de camadas dentro da VPC
+
+---
+
+## 📈 Escalabilidade
+
+- Auto Scaling adiciona/remover instâncias conforme demanda
+- Load Balancer distribui o tráfego
+- S3 escala automaticamente
+
+---
+
+## 🚀 Benefícios da AWS
+
+- Redução de custos iniciais
+- Escalabilidade sob demanda
+- Alta disponibilidade
+- Segurança avançada
+- Monitoramento contínuo
+
+---
+
+## 🧠 Conclusão
+
+A solução proposta demonstra como a AWS pode ser utilizada para criar uma aplicação robusta, escalável e segura, atendendo às necessidades de uma farmácia virtual moderna.
